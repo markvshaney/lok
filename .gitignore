@@ -44,5 +44,9 @@ yarn-error.log*
 next-env.d.ts
 
 .cursor-scratchpad
+.cursor-temp
 
 *storybook.log
+
+# Keep chat logs but ignore sensitive data
+!.cursor-chats/pending-*.md

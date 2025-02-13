@@ -129,3 +129,40 @@ npx prisma migrate deploy                  # Deploy migrations to production
 ## 📝 License
 
 MIT License
+
+## Chat Documentation
+
+### Structure
+.cursor-chats/
+├── template.md          # Template for new chat logs
+├── README.md           # Chat index
+└── YYYY-MM/            # Monthly chat directories
+    └── YYYY-MM-DD-chat-session-HHMMSS.md
+
+### Creating New Chat Logs
+1. Copy template: `.cursor-chats/template.md`
+2. Name format: `YYYY-MM-DD-chat-session-HHMMSS.md`
+3. Update index in `.cursor-chats/README.md`
+
+### Sections
+- Topics Covered: Main discussion points
+- Key Decisions: Important choices made
+- Q&A: Questions and detailed answers
+- Code Changes: Specific file changes
+- Next Steps: Action items
+- Related Chats: Links to related discussions
+- Notes: Additional context
+
+### Code Changes
+All code changes are documented in `.cursor-composer/` using a similar structure:
+- Template-based documentation
+- Automatic diff capture
+- Build status tracking
+- Dependency management
+- Links to related discussions
+
+### Version Control
+- All code changes should be committed to Git
+- Chat sessions are stored in `.cursor-chats/` for reference
+- Use proper commit messages for tracking changes
+- The session capture system only tracks conversations, not code changes
